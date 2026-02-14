@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>143</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://raw.githubusercontent.com/Xnuvers007/valentine/refs/heads/main/css/cheeseforme.css">
+  <link rel="shortcut icon" href="assets/favicon/icons8-heart-bubbles-96.png" type="image/x-icon">
+</head>
+
+<body>
+  <div id="login-page" class="login-container">
+    <img
+      src="https://raw.githubusercontent.com/Xnuvers007/valentine/refs/heads/main/image/bubu-drives-car-hello-dudu.webp"
+      alt="Bubu Drives Car" class="gambarDudu" />
+    <h2>Haloooooo :> ❤️</h2>
+    <div class="login-form">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button onclick="checkLogin()">Login</button>
+      <p id="error-message"></p>
+    </div>
+  </div>
+  <div id="content">
+    <audio class="music" id="linkmp3" autoplay loop muted>
+      <source
+        src="assets/music/Tahanan (c) El Manu [Official Audio].mp3"
+        type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <div class="floating-hearts"></div>
+    <div class="container">
+      <h1>
+        Happy Valentine's Day, Melah! <span class="heart">❤️</span>
+      </h1>
+
+      <div class="message">
+        <p class="yangtercinta">For My Beloved Baby Pearl 💖</p>
+        <p class="setiapDetik">
+          Every second with you is the most beautiful gift in my life.
+        </p>
+        <p class="alasan">
+          You are the reason my heart always beats with love. Your smile is the sunshine that brightens my day. Living
+          in this world is indeed disgusting, but I still remember that I have something beautiful
+          <strong>YOUR SMILE💝</strong>
+        </p>
+        <p class="selamatValentine">Happy Birthday and Happy Valentine's Day, Mama ko! 💝</p>
+      </div>
+
+      <div class="gif-container">
+        <img class="main-gif"
+          src="https://raw.githubusercontent.com/Xnuvers007/valentine/refs/heads/main/image/bear-kiss-bear-kisses.gif"
+          alt="Bear Kiss GIF" />
+      </div>
+
+      <div class="counter">
+        <p>Beautiful days with you:</p>
+        <div id="loveCounter">Loading...</div>
+      </div>
+
+      <div class="memory-box">
+        <h3>Our Beautiful Memories 💕</h3>
+        <div class="gallery">
+          <div class="gallery-item">
+            <!-- src diganti dengan url yang diingkan -->
+            <img src="assets/pics/IMG_20250605_115324.jpg" alt="Memory 1" />
+            <div class="gallery-overlay">
+              <span class="gallery-title">
+                <br /><br />
+                I love you <br />
+              </span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/pics/IMG_20251213_202643.jpg" alt="Memory 2" />
+            <div class="gallery-overlay">
+              <span class="gallery-title">Sweet Moments <br /><br />
+                Both in times of joy and sorrow we go through :> <br />
+                Thank you my love <br />
+              </span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/pics/IMG_20251122_114638.jpg" alt="Memory 3" />
+            <div class="gallery-overlay">
+              <span class="gallery-title">Foodtrip Moments <br /><br />
+                I love you more <br />
+                Thank you for everything! <br />
+                Always loving you
+              </span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/pics/Screenshot_2025-10-08-08-50-18-483_com.facebook.orca.jpg" alt="Memory 4" />
+            <div class="gallery-overlay">
+              <span class="gallery-title">Kulitan Moments <br /><br />
+                Mwaaaaaah!
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="imageModal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Gallery Image" />
+        <div class="modal-caption"></div>
+      </div>
+
+      <div class="music-player">
+        <h3 class="LaguUntukKita">Song for us 🎵</h3>
+        <p class="PlaylistSpesial">
+          Special playlist for our special moments:
+        </p>
+        <ul class="daftarnya">
+          <li>
+            <a class="linknya" href="https://www.youtube.com/watch?v=GYccGtoSqx8&list=RDGYccGtoSqx8&start_radio=1">💝
+              Tahanan - El Manu</a>
+          </li>
+          <li>
+            <a class="linknya" href="https://www.youtube.com/watch?v=hifLWrMh-T4&list=RDhifLWrMh-T4&start_radio=1">💝
+              Ikaw at Ako - TJ Monterde</a>
+          </li>
+          <li>
+            <a class="linknya" href="https://www.youtube.com/watch?v=v82VtUUGFqk&list=RDv82VtUUGFqk&start_radio=1">💝
+              Palagi - TJ Monterde</a>
+          </li>
+          <li>
+            <a class="linknya"
+              href="https://www.youtube.com/watch?v=7I1SPKwTXJ0&list=RD7I1SPKwTXJ0&start_radio=1">💝
+              I Like You So Much, You’ll Know It</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="gift-box" onclick="openGift()"></div>
+      <div class="gift-content" id="giftContent">
+        <h2 class="Surprise">Surprise! 🎁</h2>
+        <p class="HadiahSpesial">Special letter for special people:</p>
+        <ul class="daftarHadiah">
+          <p>My Melah,
+
+Today is a day that is doubly yours, and therefore doubly special to me. Happy Birthday to the woman who makes my world brighter, and Happy Valentine’s Day to the woman who holds my heart. It feels like the universe decided to put all its love into one single day just for you.
+
+I’ve been thinking about this morning. When I was overwhelmed and struggling, you didn't run from the mess. You just quietly, lovingly, stood your ground beside me. You reminded me that I’m not alone. Thank you for that. Thank you for a love that isn't conditional on me having it all together. Thank you for being my peace when my world feels a little chaotic.
+
+Your love is the greatest gift I have ever received, and I promise to spend every day trying to be worthy of it. I love you more than words can say, today and every day.
+
+Happy Birthday, my Valentine. You are everything.
+          </p>
+        </ul>
+        <button aria-label="Click For More Love!" onclick="showLove()">
+          Click For More Love! ❤️
+        </button>
+      </div>
+    </div>
+
+    <div class="love-message" id="loveMessage">
+      <span class="close-btn" onclick="closeLoveMessage()">×</span>
+      <div id="loveMessageContent"></div>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+
+  <script src="script.js"></script>
+</body>
+
+</html>
